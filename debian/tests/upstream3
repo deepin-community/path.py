@@ -1,0 +1,3 @@
+#!/bin/sh
+mv path path.bak
+python3 test_path.py

@@ -1,0 +1,2 @@
+Tests: upstream3
+Depends: python3-path, python3-pytest, python3-setuptools, python3-packaging

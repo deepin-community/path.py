@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/pkg-info.mk
+
+srcdir=$(shell pwd)
+export PYBUILD_NAME=path
+export LC_ALL=C.UTF-8
+export PYBUILD_TEST_ARGS_python3=$(srcdir)/test_path.py
+# it's not even clear why those tests should succeed...
+export PYBUILD_TEST_ARGS_python2=$(PYBUILD_TEST_ARGS_python3) -k "not test_listdir_other_encoding"
+
+%:
+	dh $@ --with python3 --buildsystem=pybuild
+
+override_dh_auto_build:
+	sed -i path/__init__.py -e "s/@VERSION@/'$(DEB_VERSION_UPSTREAM)'/g"
+	dh_auto_build

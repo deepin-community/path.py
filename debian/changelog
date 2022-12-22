@@ -1,0 +1,228 @@
+path.py (16.2.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * debian/control
+    - use proper team email address
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 25 Aug 2021 00:13:49 -0400
+
+path.py (16.2.0-1) unstable; urgency=medium
+
+  * Fix d/watch.
+  * New upstream release.
+  * Bump std-vers to 4.6.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Thu, 19 Aug 2021 10:57:57 +0200
+
+path.py (15.1.0-1) unstable; urgency=medium
+
+  * New upstream relese.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sun, 31 Jan 2021 19:20:09 +0100
+
+path.py (15.0.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-vers to 4.5.1.
+  * Drop the only patch (useless).
+
+ -- Julien Puydt <jpuydt@debian.org>  Wed, 09 Dec 2020 08:04:46 +0100
+
+path.py (15.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 03 Aug 2020 17:28:30 +0200
+
+path.py (14.0.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Bump Standards-Version to 4.4.1.
+
+  [ Julien Puydt ]
+  * Bump std-vers to 4.5.0.
+  * Bump dh-compat to 13.
+  * New upstream release.
+  * Better d/watch (upstream change in versioning).
+  * Remove missing_flake8.patch (upstreamed).
+  * Remove version_with_pkgresources.patch (upstreamed).
+  * Update the team mailing list's address.
+  * Add patch to make pytest run.
+  * Declare d/rules doesn't need root.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 11 Jul 2020 15:47:28 +0200
+
+path.py (12.0.1-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Use debhelper-compat instead of debian/compat.
+  * Bump Standards-Version to 4.4.0.
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 27 Jul 2019 21:59:05 +0200
+
+path.py (12.0.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Rename d/tests/control.autodep8 to d/tests/control.
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-ver to 4.3.0.
+  * Update version_with_pkgresources.patch.
+  * Drop the Python 2 package (we miss python-pytest-tempdir).
+
+ -- Julien Puydt <jpuydt@debian.org>  Sat, 13 Apr 2019 21:18:19 +0200
+
+path.py (11.5.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix autopkgtests, replace them with autodep8 Python tests.
+
+ -- Ondřej Nový <onovy@debian.org>  Fri, 23 Nov 2018 08:55:24 +0100
+
+path.py (11.5.0-2) unstable; urgency=medium
+
+  * Modify how the upstream test suite gets run (Closes: #911488).
+
+ -- Julien Puydt <jpuydt@debian.org>  Mon, 22 Oct 2018 10:19:28 +0200
+
+path.py (11.5.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Drop upstreamed patch (to remove dep on distutils).
+  * Add patch to revert an upstream change in version detection
+    (using upstream's code would require a new package!)
+
+ -- Julien Puydt <jpuydt@debian.org>  Fri, 19 Oct 2018 17:20:04 +0200
+
+path.py (11.3.0-1) experimental; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/changelog: Remove trailing whitespaces
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+
+  [ Matthias Klose ]
+  * Add a patch to remove dep on python3-distutils
+    (Closes: #896271)
+
+  [ Julien Puydt ]
+  * Bump std-ver to 4.2.1.
+  * Use my debian.org mail address.
+  * New upstream release.
+  * Replace Matthias' patch for distutils with an upstream one.
+
+ -- Julien Puydt <jpuydt@debian.org>  Tue, 18 Sep 2018 22:44:24 +0200
+
+path.py (11.0.1-2) unstable; urgency=medium
+
+  * Refresh packaging:
+    - Bump std-ver to 4.1.4.
+    - Bump dh compat to 11.
+  * Add tests for import in autopkgtest.
+  * Add missing depends for python3-path (Closes: #896271).
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Mon, 23 Apr 2018 08:19:55 +0200
+
+path.py (11.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Add packaging as a test dependency (Closes: #894082)
+    (Thanks Mattias Klose)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 05 Apr 2018 07:25:37 +0200
+
+path.py (11.0-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Fix Format URL to correct one
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump std-ver to 4.1.3.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 15 Feb 2018 12:21:19 +0100
+
+path.py (10.5-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Bump std-ver to 4.1.1.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 02 Nov 2017 08:11:16 +0100
+
+path.py (10.4-1) unstable; urgency=medium
+
+  * Rewrite d/watch to check upstream directly.
+  * New upstream release.
+  * Bump std-ver to 4.1.0.
+  * Bump d/watch version to 4.
+  * Add autopkgtest.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 03 Sep 2017 16:08:01 +0200
+
+path.py (10.3.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Push standards-version to 4.0.0.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sat, 01 Jul 2017 13:51:20 +0200
+
+path.py (10.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Tue, 24 Jan 2017 22:25:54 +0100
+
+path.py (10.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 06 Jan 2017 08:57:00 +0100
+
+path.py (9.0.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Tue, 20 Dec 2016 10:40:01 +0100
+
+path.py (9.0-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Upstream dropped .hgtags.
+  * Push dh compat to 10.
+  * Update d/copyright.
+  * Push standards-version to 3.9.8.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Wed, 23 Nov 2016 18:30:31 +0100
+
+path.py (8.2.1+dfsg-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed VCS URL (https)
+
+  [ Julien Puydt ]
+  * New upstream release.
+  * Bump standards-version.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Fri, 13 May 2016 15:00:56 +0200
+
+path.py (8.1.2+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Use git-dpm.
+  * Get rid of .hgtags in upstream tarball.
+  * Fix typo in d/control.
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Sun, 11 Oct 2015 14:05:22 +0200
+
+path.py (8.1.1-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #797916)
+
+ -- Julien Puydt <julien.puydt@laposte.net>  Thu, 17 Sep 2015 22:59:46 +0200
